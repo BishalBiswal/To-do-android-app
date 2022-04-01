@@ -11,10 +11,11 @@ export default function App() {
     { name: 'cure cancer', id: '3' },
     { name: 'join karate classes', id: '4' }
   ])
-
+  // const [text, setText] = useState('')
   const pressHandler = (id) => {
     const newTodos = todos.filter(todo => todo.id != id)
     setTodos(newTodos)
+    // setText(' ')
   }
 
   const submitHandler = (text) => {
